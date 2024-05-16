@@ -1,9 +1,4 @@
-
-
-
-
-
-
+           package project;
               import java.util.Scanner;
                   class data_customer {
                   String customer_name;
@@ -13,7 +8,6 @@
                 String customer_purchases="";
                   String pro="";
                 }
-              
                public class offic {
                  public static data_customer customer_information=new data_customer();
                    public static  Scanner in=new Scanner (System.in);   
@@ -21,7 +15,6 @@
                       int stay_here;
                       int totai_purchases=0;
                           String customer_items = "";
-
                   do{
                       System.out.println("_______________________");
                  System.out.println("1- Notebook -$15");
@@ -35,7 +28,6 @@
                  System.out.println("9- Pencil sharpener -$4");
                  System.out.println("10- Wooden colors box-$12"); 
                  System.out.println("# Enter the number of the item you want to buy: #");
-
                  int selcet_items=in.nextInt();
                  switch(selcet_items){
                   case 1:
@@ -92,7 +84,6 @@
                        int stay_here;
                       int totai_purchases=0;
                           String customer_items = "";
-
                do {
 
                          System.out.println("_______________________");
@@ -116,7 +107,6 @@
                  case 2:
                    totai_purchases+= 25;  
                 customer_items+= "Non-Fiction - $25   ";
-
                  break;
                  case 3:
                    totai_purchases+=18;
@@ -338,10 +328,7 @@
                     System.out.print("\n________________________\nYOYR NAME\t"+customer_information.customer_name+"\n________________________\nYOUR LOCATION\t"+customer_information.customer_address+"\n________________________\nYOUR CARD\t"+customer_information.customer_card+"\n________________________\nYOUR PHONE NUMBER\t"+customer_information.customer_phone+"\n_________________________\nTHE PRICE OF YOUR PURCHASES\t"+"$"+ totai_purchases+"\n________________________\n");
                    System.out.println("YOUR PURCHASES:");
                     System.out.print(customer_information.customer_purchases);
-                    System.out.println("");
-                
-                   
-                   
+                    System.out.println("");  
                    
                }
                   public static void main(String[] args) {
